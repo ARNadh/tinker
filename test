@@ -1,0 +1,54 @@
+import 'dart:io';
+
+class participant{
+  String name;
+  var interest,time;
+  bool learner,mentor;
+  
+  
+  addStacks(){
+
+    print("Enter your interest/expertise:");
+    interest=stdin.readLineSync();
+
+  } //: Add a particular stack of interest/expertise
+
+  setMentorOrLearner(){
+
+    print("Are you a mentor?(y/n)");
+    String k =stdin.readLineSync();
+    if (k = 'y') {
+      mentor=true;
+    } 
+    else if (k = 'n'){
+      learner=true;      
+    }
+    else{
+      print("invalid entry!!");
+    }
+
+  } //Set whether the participant is learner or mentor
+
+  setAvailableTime(){
+    if(mentor=true){
+    print("enter the available time");
+
+    }  
+
+  } //: if person is mentor set available time
+
+  getMentor(interest,time){
+    while(mentor='true'&&time!=null){
+     if (interest=this.interest&&time=this.time){
+       print(name);
+     }  
+        
+      
+
+
+
+    }
+    
+    }//: Takes stack and time as params and finds available mentors. 
+
+}
